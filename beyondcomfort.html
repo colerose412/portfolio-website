@@ -3,15 +3,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Beyond Comfort</title>
     <link href="img/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css"
+    href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700"
+        rel="stylesheet">
   </head>
-  <body>
+
+  <body  id="beyondcomfort">
     <header>
-      <div>
+      <div id="logo">
         <a href="index.html">
           <img
-        src="img/logo_temp.svg" alt="Nicole Rosenberg Logo">
+        src="img/logo_temp.svg" alt="Nicole Rosenberg Logo" height="100">
       </a>
         <nav>
           <ul><!-- not bulleted because inside nav tag-->
@@ -24,7 +31,7 @@
     </header>
 
 <main>
-  <div><!-- Intro -->
+  <div id="intro"><!-- Intro -->
     <div><!-- text -->
     <h1>Beyond Comfort</h1>
     <p>Ten years ago, I met Annie. She had recently graduated from esthetician school
@@ -38,7 +45,7 @@
     </div><!-- close text -->
   </div><!-- close Intro -->
 
-<div>
+<div id="process">
   <h2>My Process</h2>
     <p>I started by identifying the key features that I wanted the app to include
   and reviewed other apps (described below). I then created user flows and a
@@ -65,12 +72,8 @@
       </div><!-- close staff flow text-->
 
       <div><!-- staff flow illustration-->
-  <picture>
-    <source srcset="img/beyond_comfort/userflows/staffflow_600px.jpg"
-    media="(max-width:767px)">
-      <img src="img/beyond_comfort/userflows/staffflow_1200px.jpg"
-      alt="Staff User Flow">
-  </picture>
+        <img src="img/beyond_comfort/userflows/staffflow_long.svg"
+        alt="Client User Flow">
       </div><!-- close staff flow illustration-->
     </div><!-- close staff flow -->
 
@@ -86,12 +89,8 @@
   Profile screens which have typical user data.</p>
       </div><!-- close client flow text-->
       <div><!-- client flow illustration -->
-  <picture>
-  <source srcset="img/beyond_comfort/userflows/clientflow_600px.jpg"
-  media="(max-width:767px)">
-    <img src="img/beyond_comfort/userflows/clientflow_1200px.jpg"
+    <img src="img/beyond_comfort/userflows/clientflow_long.svg"
     alt="Client User Flow">
-  </picture>
       </div><!-- close client flow illustration -->
     </div><!-- close client flow -->
   </div><!-- close user flow -->
@@ -108,7 +107,7 @@
 
 </div><!-- close process -->
 
-<div><!-- ideation -->
+<div id="ideation"><!-- ideation -->
   <div><!-- ideation text -->
   <h2>Ideation</h2>
     <p>I imagined a tool that could help Annie systematically juggle her small
@@ -130,7 +129,7 @@
   </div><!-- close scenario illustration -->
 </div><!-- close ideation -->
 
-<div><!-- design -->
+<div id="design"><!-- design -->
 
   <div><!-- design text-->
     <h2>Design</h2>
@@ -143,29 +142,33 @@
       <h3>Android</h3>
 
       <div><!-- staff -->
-      <h4>Staff Screens</h4>
-          <picture>
-            <source srcset="img/beyond_comfort/screens/android_staff_600px@2x.jpg"
-            media="(max-width:767px)">
+      <h4>Staff Screens</h4><!--too long if down to 600px-->
             <img src="img/beyond_comfort/screens/android_staff_1200px@2x.jpg"
             alt="Android Staff View Screens">
-          </picture>
       </div><!-- close staff -->
 
       <div><!-- client -->
       <h4>Client Screens</h4>
-          <picture>
-            <source srcset="img/beyond_comfort/screens/android_client_600px@2x.jpg"
-            media="(max-width:767px)">
             <img src="img/beyond_comfort/screens/android_client_1200px@2x.jpg"
             alt="Android Client View Screens">
-          </picture>
       </div><!-- close client -->
 
 </div><!-- close android -->
 <div><!--begin ios-->
   <h3>iOS</h3>
-  <p>Not revising these until I understand sizing better</p>
+
+  <div><!-- staff -->
+  <h4>Staff Screens</h4><!--too long if down to 600px-->
+        <img src="img/beyond_comfort/screens/ios_staff_1200px@2x.jpg"
+        alt="iOS Staff View Screens">
+  </div><!-- close staff -->
+
+  <div><!-- client -->
+  <h4>Client Screens</h4>
+        <img src="img/beyond_comfort/screens/ios_client_1200px@2x.jpg"
+        alt="iOS Client View Screens">
+  </div><!-- close client -->
+
 </div><!--close ios-->
 
 </div><!--close screens-->
@@ -177,16 +180,16 @@
       see if you can toggle between staff and client!</p>
 
       <div><!-- android link -->
-        <a href="https://xd.adobe.com/view/3cad89b8-3c57-48de-bb49-7d95d430508c-69fe/?fullscreen">Android Prototype</a>
+        <a href="https://xd.adobe.com/view/3cad89b8-3c57-48de-bb49-7d95d430508c-69fe/?fullscreen" target="_blank">Android Prototype</a>
       </div>
       <div><!-- android link -->
-        <a href="https://xd.adobe.com/view/224697b4-9ca8-4930-b505-3eeb0df1e843-7715/">iOS Prototype</a>
+        <a href="https://xd.adobe.com/view/224697b4-9ca8-4930-b505-3eeb0df1e843-7715/" target="_blank">iOS Prototype</a>
       </div>
 
 </div><!--prototype-->
 
 
-<div><!--conclusion-->
+<div id="conclusion"><!--conclusion-->
   <h2>Conclusion</h2>
   <div>
   <h3>The Designer’s Rollercoaster</h3>
@@ -221,7 +224,7 @@
 </main>
 <footer>
     <div><!-- orange: footer block-->
-      <div><!-- yellow-->
+      <div id="contact"><!-- yellow-->
 
         <h2>Get in Touch</h2><!--blue-->
         <p>
@@ -230,14 +233,14 @@
         </p><!--purple-->
 
         <div><!-- violet: email-->
-          <a href="mailto:someone@gmail.com">send email</a><!--red-->
+          <a href="mailto:someone@gmail.com" class="button contact">Send email</a><!--red-->
         </div><!-- close violet-->
 
         <div><!-- violet: social-->
 
           <a href="https://www.linkedin.com/in/nicole-rosenberg-26b31811?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJEU8TS1nQ760%2FjI255D1Pw%3D%3D"
           target="_blank"> <!-- LinkedIn-->
-            <svg height="42px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+            <svg height="42px" fill="#39a78e" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
             xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
             <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256
@@ -262,7 +265,7 @@
               <g id="behance">
                 <path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0
                   30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z"
-                  fill="#000000"/>
+                  fill="#39a78e"/>
                   <path d="M35.423091,19.8620192 L35.423091,22.1697115
                   L44.6538602,22.1697115 L44.6538602,19.8620192 L35.423091,19.8620192
                   Z M12.1153846,18.6608699 L22.7675034,18.7788462 C22.7675034,18.7788462
@@ -314,7 +317,7 @@
             </a>
 
           <a href="https://www.twitter.com/colerose412" target="_blank"> <!-- Twitter -->
-            <svg height="42px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+            <svg height="42px" fill="#39a78e" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
               version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
               xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256,0c141.29,0
               256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256
@@ -331,7 +334,7 @@
           </a>
         </div><!-- close violet-->
 
-        <p>Copyright Nicole Rosenberg 2021</p>
+        <p>&copy; Copyright Nicole Rosenberg 2021</p>
 
       </div><!-- close yellow-->
     </div><!-- close orange: footer block-->

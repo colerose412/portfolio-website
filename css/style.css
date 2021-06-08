@@ -1,0 +1,156 @@
+
+/*
+color palette:
+gesso white: #dddcd8
+swedish grey: #c8c3bf
+classic navy: #2e3440
+noir (default font): #16171b
+espresso: #5a4c43;
+zomp green (links): #39a78e;
+sea green (visited links): #2a7a68;
+dark brown (active button): #4e423a;
+*/
+
+/*
+
+*/
+
+img {
+  width: 100%;
+}
+body {
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #16171b;
+}
+h1, h2, h3, h4 {
+  line-height 1.4;
+  color: #5a4c43;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+/*link styling*/
+a {
+  color: #39a78e;
+  text-decoration: none;
+  font-weight: 400;
+}
+/*change to darker shade of green after visited*/
+a:visited {
+color: #2a7a68;
+text-decoration: none;
+font-weight: 400;
+}
+/*while hovering they are underlined and bolded*/
+a:hover {
+color: #39a78e;
+text-decoration: underline;
+font-weight: 700;
+}
+/*when pressed they turn navy*/
+a:active {
+color: #2e3440;
+text-decoration: underline;
+font-weight: 700;
+}
+/*when tabbed they are same as hovering*/
+a:focus {
+color: #39a78e;
+text-decoration: underline;
+font-weight: 700;
+}
+
+/*style buttons*/
+.button {
+  display: inline-block;
+  background-color: #39a78e;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 8px 32px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.button:visited {
+  background-color: #39a78e;
+  color: #ffffff;
+text-decoration: none;
+font-weight: 400;
+}
+.button:hover {
+  background-color: #39a78e;
+  color: #ffffff;
+text-decoration: none;
+font-weight: 700;
+}
+/*doesn't work*/
+.button:active {
+  background-color: #2a7a68;
+  color: #ffffff;
+text-decoration: none;
+font-weight: 700;
+}
+.button:focus {
+  background-color: #39a78e;
+  color: #ffffff;
+text-decoration: none;
+font-weight: 700;
+}
+/*style email buttons*/
+.button.contact {
+  display: inline-block;
+  background-color: #c8c3bf;
+  color: #5a4c43;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 8px 32px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.button.contact:visited {
+  background-color: #c8c3bf;
+  color: #5a4c43;
+text-decoration: none;
+font-weight: 400;
+}
+.button.contact:hover {
+  background-color: #c8c3bf;
+  color: #5a4c43;
+text-decoration: none;
+font-weight: 700;
+}
+/*doesn't work*/
+.button.contact:active {
+  background-color: #5a4c43;
+  color: #ffffff;
+text-decoration: none;
+font-weight: 700;
+}
+.button.contact:focus {
+  background-color: #c8c3bf;
+  color: #5a4c43;
+text-decoration: none;
+font-weight: 700;
+}
+
+/*what is wrong with this?*/
+#hello {
+  background-color= #c8c3bf;
+}

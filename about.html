@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>About - UI Designer Nicole Rosenberg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Nicole Rosenberg</title>
     <link href="img/favicon.ico" rel="shortcut icon">
+    href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700"
+    rel="stylesheet">
   </head>
-  <body>
+  <body id="about">
     <header>
-      <div>
+      <div id="logo">
         <a href="index.html">
           <img
-        src="img/logo_temp.svg" alt="Nicole Rosenberg Logo">
+        src="img/logo_temp.svg" alt="Nicole Rosenberg Logo" height="100">
       </a>
         <nav>
           <ul><!-- not bulleted because inside nav tag-->
@@ -28,7 +34,7 @@
     <h1>About</h1>
   </div><!-- close yellow: about-->
 
-  <div><!-- yellow: content-->
+  <div id="story"><!-- yellow: content-->
     <img src="img/self_portrait_600px.jpg"
     alt="Self Portrait">
     <!--larger than 600px is a bit much. Okay not to vary based on screen size?-->
@@ -72,10 +78,10 @@
     <li>In 2003, I completed a Bachelor of Arts in Philosophy. My coursework focused
     on analytics & logic — that was when I learned began my love affair with logic flows.</li>
     </ul><!-- purple: story content -->
-    <a href="files/cv.pdf" target="_blank" download>Download my resume</a><!-- red -->
+    <a href="files/cv.pdf" target="_blank" class="button" download>Download my resume</a><!-- red -->
 </div><!-- close mint: story -->
 
-      <div><!-- mint: skills & tools full block -->
+      <div id="skill_tool"><!-- mint: skills & tools full block -->
         <h2>Skills & Tools</h2>
         <div><!-- little green: skills & tools: content -->
             <div><!-- little mint 1: relevant skills -->
@@ -113,7 +119,7 @@
 
 <footer>
     <div><!-- orange: footer block-->
-      <div><!-- yellow-->
+      <div id="contact"><!-- yellow-->
 
         <h2>Get in Touch</h2><!--blue-->
         <p>
@@ -122,14 +128,14 @@
         </p><!--purple-->
 
         <div><!-- violet: email-->
-          <a href="mailto:someone@gmail.com">send email</a><!--red-->
+          <a href="mailto:someone@gmail.com" class="button contact">Send email</a><!--red-->
         </div><!-- close violet-->
 
         <div><!-- violet: social-->
 
           <a href="https://www.linkedin.com/in/nicole-rosenberg-26b31811?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJEU8TS1nQ760%2FjI255D1Pw%3D%3D"
           target="_blank"> <!-- LinkedIn-->
-            <svg height="42px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+            <svg height="42px" fill="#39a78e" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
             xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
             <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256
@@ -154,7 +160,7 @@
               <g id="behance">
                 <path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0
                   30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z"
-                  fill="#000000"/>
+                  fill="#39a78e"/>
                   <path d="M35.423091,19.8620192 L35.423091,22.1697115
                   L44.6538602,22.1697115 L44.6538602,19.8620192 L35.423091,19.8620192
                   Z M12.1153846,18.6608699 L22.7675034,18.7788462 C22.7675034,18.7788462
@@ -206,7 +212,7 @@
             </a>
 
           <a href="https://www.twitter.com/colerose412" target="_blank"> <!-- Twitter -->
-            <svg height="42px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+            <svg height="42px" fill="#39a78e" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
               version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
               xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256,0c141.29,0
               256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256
@@ -223,7 +229,7 @@
           </a>
         </div><!-- close violet-->
 
-        <p>Copyright Nicole Rosenberg 2021</p>
+        <p>&copy; Copyright Nicole Rosenberg 2021</p>
 
       </div><!-- close yellow-->
     </div><!-- close orange: footer block-->
