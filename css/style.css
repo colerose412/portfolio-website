@@ -11,13 +11,32 @@ sea green (visited links): #2a7a68;
 dark brown (active button): #4e423a;
 */
 
-/*
 
-*/
+/*set default width to include padding & border*/
+* {
+  box-sizing: border-box;
+}
 
+/*by default images will take up full width of screen*/
 img {
   width: 100%;
 }
+
+/*some images are way to big. want option to cap them.*/
+.restrain {
+  max-width: 800px;
+}
+.super_restrain {
+  max-width: 400px;
+}
+
+/*want to center those images.*/
+.centered {
+  display: block;
+  text-align: center;
+}
+
+/*set default typography*/
 body {
   font-family: 'Arimo', sans-serif;
   font-size: 16px;
@@ -30,29 +49,31 @@ h1, h2, h3, h4 {
   color: #5a4c43;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 1.8em;
   font-weight: 700;
+  text-align: center;
 }
 h2 {
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
 }
 h3 {
-  font-size: 1.75em;
+  font-size: 1.4em;
   font-weight: 400;
 }
 h4 {
-  font-size: 1.35em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
-/*link styling*/
+/*hyperlink styling; default to zomp green*/
 a {
   color: #39a78e;
   text-decoration: none;
   font-weight: 400;
 }
-/*change to darker shade of green after visited*/
+/*sea green after visited*/
 a:visited {
 color: #2a7a68;
 text-decoration: none;
@@ -64,7 +85,7 @@ color: #39a78e;
 text-decoration: underline;
 font-weight: 700;
 }
-/*when pressed they turn navy*/
+/*when pressed they turn classic navy*/
 a:active {
 color: #2e3440;
 text-decoration: underline;
@@ -84,43 +105,48 @@ font-weight: 700;
   color: #ffffff;
   font-weight: 400;
   font-size: 1.2em;
-  padding: 8px 32px;
-  border-radius: 20px;
+  padding: 8px 16px;
+  margin: 0px 16px;
+  border-radius: 24px;
   transition: 0.2s;
 }
+/*don't want buttons to change after visited; overriding hyperlink rule*/
 .button:visited {
   background-color: #39a78e;
   color: #ffffff;
 text-decoration: none;
 font-weight: 400;
 }
+/*semi-bold when hovered over*/
 .button:hover {
   background-color: #39a78e;
   color: #ffffff;
 text-decoration: none;
-font-weight: 700;
+font-weight: 600;
 }
-/*doesn't work*/
+/*turn sea green when pressed*/
 .button:active {
   background-color: #2a7a68;
   color: #ffffff;
 text-decoration: none;
-font-weight: 700;
+font-weight: 600;
 }
+/*same as hovering*/
 .button:focus {
   background-color: #39a78e;
   color: #ffffff;
 text-decoration: none;
-font-weight: 700;
+font-weight: 600;
 }
-/*style email buttons*/
+/*style CTAs that take you out of app with lighter color*/
 .button.contact {
   display: inline-block;
   background-color: #c8c3bf;
   color: #5a4c43;
   font-weight: 400;
   font-size: 1.2em;
-  padding: 8px 32px;
+  padding: 8px 16px;
+  margin: 0px 16px 16px 16px;
   border-radius: 20px;
   transition: 0.2s;
 }
@@ -134,23 +160,123 @@ font-weight: 400;
   background-color: #c8c3bf;
   color: #5a4c43;
 text-decoration: none;
-font-weight: 700;
+font-weight: 600;
 }
-/*doesn't work*/
+/*turn espresso when pressed*/
 .button.contact:active {
   background-color: #5a4c43;
   color: #ffffff;
 text-decoration: none;
-font-weight: 700;
+font-weight: 600;
 }
 .button.contact:focus {
   background-color: #c8c3bf;
   color: #5a4c43;
 text-decoration: none;
-font-weight: 700;
+font-weight: 600;
 }
 
-/*what is wrong with this?*/
-#hello {
-  background-color: #c8c3bf;
+/*layout styling*/
+/*create a wrapper-container to hold layout*/
+.container {
+  padding: 0 15px;
+}
+/*add top margins between sections*/
+.row {
+  margin: 25px 0;
+}
+/*place a border between sections*/
+/**home**/
+#home .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #c8c3bf;
+}
+/**about**/
+#about .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #c8c3bf;
+}
+/**work**/
+#beyondcomfort .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #c8c3bf;
+}
+
+/*limit size of logo*/
+.logo {
+  max-width: 48px;
+}
+.logo:hover {
+  max-width: 52px;
+}
+
+/*style header*/
+header {
+  background-color: rgba(22,23,27,.9);
+  text-align: center;
+  padding: 10px 0;
+}
+/*style nav*/
+/*remove bullets*/
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+/*move buttons to same line*/
+nav > ul > li {
+  display: inline-block;
+}
+/*style text and spacing*/
+nav > ul > li > a {
+  padding: 0 8px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #f4f3f2 !important;
+}
+/*change to white and underlined when hovering*/
+nav > ul > li > a:hover {
+  text-decoration: underline;
+  font-weight: 400;
+  color: #ffffff !important;
+}
+/*turn bold when pressed*/
+nav > ul > li > a:active {
+  font-weight: 700;
+  color: #ffffff !important;
+}
+/*same as hover*/
+nav > ul > li > a:focus {
+  text-decoration: underline;
+  font-weight: 400;
+  color: #ffffff !important;
+}
+
+/*so that elements don't fall outside header*/
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+/*press the hero section right up to the header (replace margin with padding)*/
+#hero {
+  background-color: #f4f3f2;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+/*distinguish and fix the header position*/
+header {
+  box-shadow: 0px 6px 4px rgba(46, 52, 64, 0.5);
+  width: 100%;
+  position: fixed;
+}
+/*this looks crappy but want to remember the general code.
+.logo:hover {
+  box-shadow: 3px 3px 2px rgba(46, 52, 64, 0.5);
+  border-radius: 100%;
+}*/
+/*height of the fixed header, so main isn't hidden*/
+main {
+  padding-top: 137px;
 }
