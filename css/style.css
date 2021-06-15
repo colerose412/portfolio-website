@@ -66,28 +66,18 @@ h4 {
   font-size: 1.2em;
   font-weight: 400;
 }
-
+li {
+  line-height: 2;
+}
 /*hyperlink styling; default to zomp green*/
 a {
   color: #39a78e;
   text-decoration: none;
   font-weight: 400;
 }
-/*sea green after visited*/
-a:visited {
-color: #2a7a68;
-text-decoration: none;
-font-weight: 400;
-}
 /*while hovering they are underlined and bolded*/
 a:hover {
 color: #39a78e;
-text-decoration: underline;
-font-weight: 700;
-}
-/*when pressed they turn classic navy*/
-a:active {
-color: #2e3440;
 text-decoration: underline;
 font-weight: 700;
 }
@@ -126,7 +116,7 @@ font-weight: 600;
 }
 /*turn sea green when pressed*/
 .button:active {
-  background-color: #2a7a68;
+  background-color: #2a7a68 !important;
   color: #ffffff;
 text-decoration: none;
 font-weight: 600;
@@ -164,8 +154,8 @@ font-weight: 600;
 }
 /*turn espresso when pressed*/
 .button.contact:active {
-  background-color: #5a4c43;
-  color: #ffffff;
+  background-color: #5a4c43 !important;
+  color: #ffffff !important;
 text-decoration: none;
 font-weight: 600;
 }
@@ -262,7 +252,7 @@ nav {
 #hero {
   background-color: #f4f3f2;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 /*distinguish and fix the header position*/
@@ -278,5 +268,70 @@ header {
 }*/
 /*height of the fixed header, so main isn't hidden*/
 main {
-  padding-top: 137px;
+  padding-top: 159px;
 }
+
+/*adust for medium screens (50% splits)*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  } /*no longer center header*/
+  nav {
+      width: auto;
+      float: right;
+  }
+  .logo {
+    margin: 7px 0px;
+  } /*so that it lines up with nav*/
+  .col-md-6 {
+    width: 50%;
+  } /*two columns on tablets*/
+  [class*="col-"] {
+    float: left;
+    padding: 0px 10px;
+  } /*so columns are side-by-side and spaced*/
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } /*clear the flow so that things aren't jumbling*/
+  main {
+    padding-top: 89px;
+  }
+}
+/*60:40 split for large screens*/
+@media only screen and (min-width: 1024) {
+      } /*no longer center header*/
+      nav {
+          width: auto;
+          float: right;
+      }
+      .logo {
+        margin: 7px 0px;
+      } /*so that it lines up with nav*/
+      .col-lg-7 {
+        width: 60%;
+      }
+      .col-lg-5 {
+        width: 40%;
+      }
+      [class*="col-"] {
+        float: left;
+        padding: 0px 10px;
+      } /*so columns are side-by-side and spaced*/
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      } /*clear the flow so that things aren't jumbling*/
+      .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }/*so that content isn't really large*/
+
+    }
+
+    #skill_tool {
+      margin-top: 25px;
+    }
