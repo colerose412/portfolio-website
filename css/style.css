@@ -277,16 +277,9 @@ header {
   position: fixed;
 }
 
-#cvbutton {
-  width: 100%;
-  display: block;
-  margin-top: 20px;
-  padding: 50px;
-}
 /*can't figure out how to get the background color to go up to the separator.*/
 #prototypes {
   background-color: rgba(221,220,216,0.5);
-  padding: 25px 0px;
 }
 /*how do I make the shadow all around?*/
 a > picture:hover {
@@ -364,6 +357,12 @@ main {
 
     }
 
+@media only screen and (max-width: 1023px) {
+.one-col {
+  width: 100%;
+}
+}
+
     #skill_tool {
       margin-top: 25px;
     }
@@ -414,3 +413,42 @@ main {
   animation-timing-function: ease;
 }
 /*create animation rules for the class*/
+
+.float {
+	position:fixed;
+	bottom:60px;
+	right:40px;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 16px 16px;
+	background-color:#4e423a;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  transition-duration: 0.5s
+}
+
+@keyframes bounce {
+  from {transform: translate(0,20px);}
+  to {transform: translate(0,40px);}
+}
+
+.float {
+  animation-duration: 2s;
+  animation-name: bounce;
+  animation-iteration-count: 20;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+.float:hover {
+  background-color: #c8c3bf;
+  color: #000000;
+text-decoration: none;
+font-weight: 600;
+padding: 16px 16px;
+border-radius: 8px;
+box-shadow: 0px 2px 2px rgba(46, 52, 64, 0.5);
+transition-duration: 0.2s
+}
