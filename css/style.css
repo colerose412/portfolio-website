@@ -218,19 +218,16 @@ font-weight: 600;
 /*style header*/
 header {
   background-color: rgba(22,23,27,.9);
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
 }
 /*style nav*/
-/*remove bullets*/
+/*remove bullets and extra margin*/
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-/*move buttons to same line*/
-nav > ul > li {
-  display: inline-block;
-}
+
 /*style text and spacing*/
 nav > ul > li > a {
   padding: 0 8px;
@@ -255,12 +252,6 @@ nav > ul > li > a:focus {
   text-decoration: underline;
   font-weight: 400;
   color: #ffffff !important;
-}
-
-/*so that elements don't fall outside header*/
-nav {
-  display: inline-block;
-  width: 100%;
 }
 
 /*press the hero section right up to the header (replace margin with padding)*/
@@ -293,7 +284,7 @@ a > picture:hover {
 }*/
 /*height of the fixed header, so main isn't hidden*/
 main {
-  padding-top: 159px;
+  padding-top: 84px;
 }
 
 /*adust for medium screens (50% splits)*/
@@ -358,18 +349,70 @@ main {
     }
 
 @media only screen and (max-width: 1023px) {
-.one-col {
-  width: 100%;
-}
+  .one-col {
+    width: 100%;
+  }
 }
 
-    #skill_tool {
+/*style toggle menu*/
+/*hide everything except the menu icon*/
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+@media only screen and (min-width: 641px) {
+  /*put buttons on same line on large screens*/
+  nav > ul > li {
+    display: inline-block;
+  }
+  /*don't display the menu icon on large screens*/
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  /*add space back in*/
+  nav > ul {
+    margin: 1em 0
+  }
+}
+
+/*set the position of the menu & link it to JS*/
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+/*style the menu*/
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 8px 0;
+  border-top: 1px solid rgba(221, 220, 216,0.5);
+  text-align: right;
+  font-size: 0.75em;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+#skill_tool {
       margin-top: 25px;
     }
 
 .icon {
   max-height: 42px;
-  margin-bottom: 24px;
 }
 
 /*define keyframe rules*/
