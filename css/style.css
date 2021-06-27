@@ -38,9 +38,9 @@ img {
 
 /*set default typography*/
 body {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   color: #16171b;
 }
@@ -49,8 +49,8 @@ h1, h2, h3, h4 {
   color: #5a4c43;
 }
 h1 {
-  font-size: 1.8em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 600;
   text-align: center;
 }
 h2 {
@@ -76,7 +76,6 @@ a {
   font-weight: 400;
 }
 /*while hovering they are underlined and bolded*/
-/*bolding no longer works*/
 a:hover {
 color: #39a78e;
 text-decoration: underline;
@@ -194,17 +193,22 @@ font-weight: 600;
 /**home**/
 #home .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #c8c3bf;
+  border-bottom: 1px solid #dddcd8;
 }
 /**about**/
 #about .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #c8c3bf;
+  border-bottom: 1px solid #dddcd8;
 }
 /**work**/
 #beyondcomfort .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #c8c3bf;
+  border-bottom: 1px solid #dddcd8;
+}
+
+#social a:hover {
+text-decoration: none;
+opacity: 0.6;
 }
 
 /*limit size of logo*/
@@ -256,7 +260,6 @@ nav > ul > li > a:focus {
 
 /*press the hero section right up to the header (replace margin with padding)*/
 #hero {
-  background-color: #f4f3f2;
   padding: 20px 0;
   display: block;
   width: 100%;
@@ -268,21 +271,13 @@ header {
   position: fixed;
 }
 
-/*can't figure out how to get the background color to go up to the separator.*/
-#prototypes {
-  background-color: rgba(221,220,216,0.5);
-}
-/*how do I make the shadow all around?*/
-a > picture:hover {
-    box-shadow: 6px 6px 6px 4px rgba(46, 52, 64, 0.5);
-}
-
 /*this looks crappy but want to remember the general code.
 .logo:hover {
   box-shadow: 3px 3px 2px rgba(46, 52, 64, 0.5);
   border-radius: 100%;
 }*/
 /*height of the fixed header, so main isn't hidden*/
+
 main {
   padding-top: 84px;
 }
@@ -345,8 +340,12 @@ main {
         margin-left: auto;
         margin-right: auto;
       }/*so that content isn't really large*/
+      }
 
-    }
+/*can't seem to get this section to not jumble in the table on M screens*/
+#research {
+  width: 100%;
+}
 
 @media only screen and (max-width: 1023px) {
   .one-col {
@@ -378,6 +377,7 @@ main {
   }
 }
 
+
 /*set the position of the menu & link it to JS*/
 .navtoggle, .navtoggle.responsive {
   position: relative;
@@ -407,91 +407,112 @@ main {
   padding: 0 0 10px;
 }
 
-#skill_tool {
-      margin-top: 25px;
-    }
-
 .icon {
   max-height: 42px;
+  margin: 14px;
 }
 
-/*define keyframe rules*/
-@keyframes chick-drop {
-  from {transform: translate(0,-20px);}
-  to {transform: translate(0,0px);}
+@media only screen and (min-width: 641px) {
+  .illustration {
+    padding-top: 42px;
+  }
 }
 
-.person {
-  animation-duration: 2s;
-  animation-name: chick-drop;
-  animation-iteration-count: infinite;
+/*****************************************************/
+button.accordion {
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  color: #5a4c43;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:after {
+  content: '\f055';
+  font-family: "fontawesome";
+  font-size: 14px;
+  padding: 8px;
+  float: right;
+}
+
+button.accordion.is-open:after {
+  content: '\f056';
+}
+
+button.accordion:hover, button.accordion.is-open {
+  background-color: #dddcd8;
+}
+
+.accordion-content {
+  background-color: white;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+/**************************************/
+@keyframes jumpout {
+from {transform: translate(400px,0);}
+to {transform: translate(70px,0)}
+}
+
+#woman {
+  animation-duration: 3s;
+  animation-name: jumpout;
+  animation-iteration-count: 1;
   animation-direction: alternate;
   animation-timing-function: ease;
 }
 
-@keyframes city-appear {
-  0% {opacity: 20%;}
-  50% {opacity: 60%;}
+@keyframes elementsappear {
+  0% {opacity: 0%;}
+  50% {opacity: 50%;}
   100% {opacity: 100%;}
 }
-
-.landscape {
-  animation-duration: 2s;
-  animation-name: city-appear;
-  animation-iteration-count: 1;
+#elements {
+  animation-duration: 6s;
+  animation-name: elementsappear;
+  animation-iteration-count: 4;
   animation-direction: alternate;
   animation-timing-function: ease-in;
 }
 
-@keyframes ground-grow {
-  from {transform: scale(0.2);}
-  to {transform: scale(1);}
-}
-
-.ground {
-  animation-duration: 2s;
-  animation-name: ground-grow;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-timing-function: ease;
-}
-/*create animation rules for the class*/
-
 .float {
 	position:fixed;
-	bottom:60px;
-	right:40px;
+	bottom:15%;
+  right:3%;
   font-size: 1em;
   font-weight: 400;
-  padding: 16px 16px;
-	background-color:#4e423a;
-	color:#FFF;
+  padding: 12px 12px;
+  background-color: #39a78e;
+  color: #ffffff;
 	border-radius:50px;
 	text-align:center;
-	box-shadow: 2px 2px 3px #999;
+	box-shadow: 0px 2px 2px rgba(46, 52, 64, 0.5);
   transition-duration: 0.5s
 }
-
-@keyframes bounce {
-  from {transform: translate(0,20px);}
-  to {transform: translate(0,40px);}
-}
-
-.float {
-  animation-duration: 2s;
-  animation-name: bounce;
-  animation-iteration-count: 20;
-  animation-direction: alternate;
-  animation-timing-function: ease;
-}
-
 .float:hover {
-  background-color: #c8c3bf;
-  color: #000000;
+  background-color: #2a7a68;
+  color: #ffffff;
 text-decoration: none;
 font-weight: 600;
 padding: 16px 16px;
 border-radius: 8px;
 box-shadow: 0px 2px 2px rgba(46, 52, 64, 0.5);
-transition-duration: 0.2s
+}
+
+@media only screen and (max-width: 641px) {
+	.float {
+    font-size: 0.75em;
+    font-weight: 400;
+    padding: 8px 8px;
+    bottom:60px;
+  }
 }

@@ -38,19 +38,16 @@
     </header>
 
 <main>
-  <a href="#prototypes" class="float">
-   <i class="my-float"></i>
-  Test the Prototypes
-   </a>
-
   <div id="intro"><!-- Intro -->
     <div class="container"><!-- intro container-->
-    <h1>Beyond Comfort</h1>
+        <div class="column col-md-6 col-lg-5"><!-- image -->
         <picture class="centered">
         <source srcset="img/beyond_comfort/beyondcomfort_cover_600px@2x.jpg" media="(max-width:767px)">
-        <img src="img/beyond_comfort/beyondcomfort_cover_1200px@2x.jpg" alt="Beyond Comfort Cover" class="restrain">
+        <img src="img/beyond_comfort/beyondcomfort_cover_1200px@2x.jpg" alt="Beyond Comfort Cover">
         </picture>
+        </div>
     <div  class="row">
+        <div class="column col-md-6 col-lg-7"><!-- context -->
       <p>Ten years ago, I met Annie. She had recently graduated from esthetician school
         and was working for a challenging boss in a drab office in a basement.
         Today, she has a thriving business in a beautiful (above-ground!) spa.
@@ -59,6 +56,7 @@
         their skincare routines, too. Thus, with the wealth of customers that she
         has accrued, Annie struggles to balance client communication, scheduling,
         product orders, and one-on-one attention.</p>
+      </div>
     </div>
     </div><!-- close intro container-->
   </div><!-- close Intro ID-->
@@ -66,18 +64,17 @@
 <div id="process">
   <div class="container"><!-- process container-->
     <div class="row">
-  <h2>My Process</h2>
+      <button class="accordion">My Process</button>
+      <div class="accordion-content">
     <p>I started by identifying the key features that I wanted the app to include
   and reviewed other apps (described below). I then created user flows and a
   low-fidelity wireframe. Next, I designed a mid-fidelity wireframe that I
   tested on users. Then I settled on a style and finally, turned it into a
   high-fidelity wireframe.</p>
-
   <div>
       <h3>User Flows</h3>
     <div><!-- staff flow -->
-
-      <div><!-- staff flow text -->
+      <div class = "container column col-md-6 col-lg-7"><!-- staff flow text -->
   <h4>Staff</h4>
     <p>The dashboard enables staff to see their to-do list in a quick snapshot.
   For a client-by-client view of their to-do list, staff can view the Clients
@@ -90,14 +87,14 @@
   messages, and the online store without digging into each client.
   My prototype focused on the skincare routine screens.</p>
       </div><!-- close staff flow text-->
-      <div class="centered"><!-- staff flow illustration-->
+      <div class="column col-md-6 col-lg-5"><!-- staff flow illustration-->
         <img src="img/beyond_comfort/userflows/staffflow_long.svg"
-        alt="Client User Flow" class="restrain">
-              </div><!-- close staff flow illustration-->
+        alt="Staff User Flow" class="super_restrain illustration">
+      </div><!-- close staff flow illustration-->
     </div><!-- close staff flow -->
 
     <div><!-- client flow -->
-      <div><!-- client flow text-->
+      <div class="container column col-md-6 col-lg-7"><!-- client flow text-->
   <h4>Clients</h4>
     <p>Similarly, the dashboard provides clients a snapshot of their activities
   and to-dos. After a preliminary visit to the spa (or virtual consultation),
@@ -107,14 +104,14 @@
   details of her upcoming appointment. Not shown in these flow charts, are the
   Profile screens which have typical user data.</p>
       </div><!-- close client flow text-->
-      <div class="centered"><!-- client flow illustration -->
+      <div class="column col-md-6 col-lg-5"><!-- client flow illustration -->
     <img src="img/beyond_comfort/userflows/clientflow_long.svg"
-    alt="Client User Flow" class="restrain">
+    alt="Client User Flow" class="super_restrain illustration">
       </div><!-- close client flow illustration -->
     </div><!-- close client flow -->
   </div><!-- close user flow -->
 
-    <div><!-- research -->
+    <div id="research"><!-- research -->
   <h3>Research</h3>
     <p>I conducted a “rapid fire” review of other skincare apps to guide my process
   and ensure I wasn’t omitting essential features or simply replicating an app
@@ -126,10 +123,13 @@
     </div><!--close row-->
   </div><!-- close process container-->
 </div><!-- close process -->
+  </div>
+
 
 <div id="ideation"><!-- ideation -->
-  <div class="container"><!-- ideation container -->
-    <h2>Ideation</h2>
+  <div class="container row"><!-- ideation container -->
+    <button class="accordion">Ideation</button>
+    <div class="accordion-content">
       <p>I imagined a tool that could help Annie systematically juggle her small
         business — separating it from her personal life, yet still providing the
         personal, supportive touch fueling her business. In essence, an app for small
@@ -137,29 +137,23 @@
         known to be more lucrative in the long run than luring in the “off customer”
         who needs a quick indulgence. I embarked to design an app that could address
         spa staff and client needs.</p>
-  </div><!-- close ideation container -->
-
 
   <div class="container"><!-- scenario illustration container -->
-    <div class="row">
+    <div>
     <h3>The Loyal Customer & Caring Clinician</h3>
-      <picture class="centered">
-        <source srcset="img/beyond_comfort/illustration/scenario_600px@2x.jpg"
-        media="(max-width:767px)">
-        <img src="img/beyond_comfort/illustration/scenario_1200px@2x.jpg"
-        alt="Communication Scenario" class="restrain">
-      </picture>
+    <img src="img/beyond_comfort/illustration/scenario_wide.jpg"
+    alt="User Scenario" class="centered restrain illustration">
+    </div>
     </div>
   </div><!-- close scenario illustration container-->
+      </div>
 </div><!-- close ideation -->
 
 <div id="design"><!-- design -->
-<div class="container">
-    <h2>Design</h2>
+<div class="container row">
+  <button class="accordion">Design</button>
+  <div class="accordion-content">
     <p>Below are the high-fidelity screens that I designed.</p>
-
-
-
 
     <div><!-- android -->
       <h3>Android</h3>
@@ -190,46 +184,48 @@
           alt="iOS Client View Screens" class="restrain">
       </div><!-- close client -->
     </div><!--close ios-->
-
+</div>
 </div><!--close container-->
 </div><!--close design-->
 
 <div id="prototypes"><!--looks messy on small screens-->
-
+  <div class="container row">
+  <button class="accordion">Interactive Prototypes</button>
+  <div class="accordion-content">
     <div class="centered">
-      <h2>Prototypes</h2>
-      <div class="row">
         <h4>Check out the interactive prototypes.</h4>
           <div class="col-md-6 centered"><!-- android -->
             <a href="https://xd.adobe.com/view/3cad89b8-3c57-48de-bb49-7d95d430508c-69fe/?fullscreen"
-            target="_blank" class="button contact">Android Prototype</a>
+            target="_blank" class="button">Android Prototype</a>
             <img src="img/beyond_comfort/android_icon.svg"
             alt="Android Icon" class="icon">
           </div>
           <div class="col-md-6 centered"><!-- iOS -->
             <a href="https://xd.adobe.com/view/224697b4-9ca8-4930-b505-3eeb0df1e843-7715/"
-            target="_blank" class="button contact">iOS Prototype</a>
+            target="_blank" class="button">iOS Prototype</a>
             <img src="img/beyond_comfort/ios_icon.svg"
             alt="iOS Icon" class="icon">
           </div>
         <p><em>Challenge:</em> see if you can toggle between staff and client!</p>
       </div><!--close row-->
-    </div><!--close centering-->
-
+    </div><!--close accordian-->
+  </div>
 </div><!--close prototype id-->
 
 
 <div id="conclusion"><!--conclusion-->
     <div class="container row"><!--conclusion container-->
+      <button class="accordion">Retrospective</button>
+      <div class="accordion-content">
       <div><!--conclusion intro-->
-        <h2>Designer's Rollercoaster</h2>
+        <h3>Designer's Rollercoaster</h3>
         <p>A seasoned interviewer and facilitator, I considered myself well-practiced at
           data collection. The three testers for whom I facilitated the process were
           confused. Yet, my fourth and fifth testers, left to their own devices,
           provided overwhelmingly positive feedback. What happened?</p>
       </div>
       <div class="col-lg-7">
-        <h3>Patience: the Forgotten Virtue</h3>
+        <h4>Patience: the Forgotten Virtue</h4>
         <p>I reflected on the variables that could have contributed to the contrasting
           experiences. I then followed-up with a few of the testers; my facilitation
           approach appeared to be the most influential issue. Unfortunately, I had
@@ -242,14 +238,15 @@
           felt confident that they could achieve the goals asked of them.</p>
         </div>
       <div class="col-lg-5">
-        <h3>Tempering Expectations</h3>
+        <h4>Tempering Expectations</h4>
         <p>Compounding my inelegant facilitation approach, I had asked users to test the
           app from two perspectives (client and staff). It led to a layered type of
           confusion. Testers needed time to digest goals that we, as facilitators, are
           asking them to assume. Moreover, asking users to switch their perspectives and
           needs mid-testing is a tall order.</p>
       </div>
-    </div><!--close conclusion container-->
+    </div>
+  </div><!--close conclusion container-->
 </div><!--close conclusion ID-->
 
 </main>
@@ -257,13 +254,10 @@
   <div class="centered"><!--footer block-->
     <div id="contact"><!-- id contact block-->
       <div class="container"><!--container for contact-->
-        <h2>Get in Touch</h2>
-        <p>
-          Do you like my work and want to discuss opportunities?
-          Call: <a href="tel:9175551234">917-555-1234</a>
-        </p>
+        <h2>Let's Connect!</h2>
+        <a href="tel:9174743065">917-474-3065</a>
         <div class="row"><!-- email-->
-          <a href="mailto:someone@gmail.com" class="button contact">Send email</a><!--red-->
+          <a href="mailto:colerose412@gmail.com" class="button contact">Email me</a>
         </div><!-- close email-->
       </div><!--close container contact-->
     </div><!--close contact id-->
@@ -273,7 +267,7 @@
         <a href=
         "https://www.linkedin.com/in/nicole-rosenberg-26b31811?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJEU8TS1nQ760%2FjI255D1Pw%3D%3D"
         target="_blank"> <!-- LinkedIn-->
-        <svg height="42px" fill="#39a78e" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+        <svg height="42px" fill="#2a7a68" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
         version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
         xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256
@@ -298,7 +292,7 @@
           <g id="behance">
             <path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0
               30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z"
-              fill="#39a78e"/>
+              fill="#2a7a68"/>
               <path d="M35.423091,19.8620192 L35.423091,22.1697115
               L44.6538602,22.1697115 L44.6538602,19.8620192 L35.423091,19.8620192
               Z M12.1153846,18.6608699 L22.7675034,18.7788462 C22.7675034,18.7788462
@@ -350,7 +344,7 @@
         </a>
 
         <a href="https://www.twitter.com/colerose412" target="_blank"> <!-- Twitter -->
-        <svg height="42px" fill="#39a78e" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+        <svg height="42px" fill="#2a7a68" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
           version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
           xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M256,0c141.29,0
           256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256
