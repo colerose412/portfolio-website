@@ -23,9 +23,9 @@
         </a>
         <nav>
           <ul><!-- not bulleted because inside nav tag-->
-            <li><a href="beyondcomfort.html">Work</a></li>
+            <li><a href="beyondcomfort.html">Work Example</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
               <i class="fas fa-bars"></i></a></li>
           </ul>
@@ -35,32 +35,16 @@
     </header>
     <main>
       <div class="container"><!-- main -->
-        <div style="
-        position: fixed;
-        top: 30%;
-        right: 24px;
-        width: 100%;">
-        <div style="
-        text-align: right;
-        max-width: 1000px;
-        margin: auto;
-        width: 100%;">
-        <a href="files/cv.pdf" target="_blank" class="float" download>Download resume
-          <i class="my-float"></i>
-        </a>
-      </div>
-    </div>
+
         <div><!-- page heading block-->
           <h1>About</h1>
         </div><!-- close heading block-->
-        <div class="centered"><!-- portrait-->
-          <img src="img/self_portrait_600px.jpg"
-          alt="Self Portrait" class="super_restrain">
-        </div><!--close portrait-->
 
-        <div style="overflow:hidden;"><!--substance-->
-          <div id="story"><!-- id the story block -->
-            <div class="container col-lg-7"><!--define story responsiveness-->
+
+
+        <div class="container row2"><!--portrait and story-->
+
+          <div id="story" class="column col-lg-7"><!-- id the story block -->
             <h2>My Story</h2>
               <p>
                 I pursue roles in which I can leverage and marry my left-brain creativity
@@ -86,36 +70,47 @@
                 My success is bolstered by my varied education: a certificate in UI design,
                 a Master of Arts in Sustainable International Development, and
                 a Bachelor of Arts in Philosophy.
-            </div><!-- close story responsiveness-->
-          </div><!-- close story id-->
+            </div><!-- close story-->
 
-          <div id="skill_tool"><!-- id skills & tools block -->
-            <div class="one-col col-lg-5"><!--define s&t responsiveness when large-->
+            <div class="centered column col-lg-5"><!-- portrait-->
+              <img src="img/self_portrait_600px.jpg"
+              alt="Self Portrait" class="restrain" style="padding-top: 48px">
+            </div><!--close portrait-->
+          </div><!-- close portrait and story -->
+
+          <div class="container centered row"><!--buttons-->
+
+              <a href="files/cv.pdf" target="_blank" class="button" download>Resume</a>
+
+              <a href="https://www.behance.net/nicolerosenberg1" target="_blank" class="button">Portfolio</a>
+
+          </div>
+
+          <div id="skill_tool" class="container row"><!-- id skills & tools block -->
+            <div><!--define s&t responsiveness when large-->
               <h2>Skills & Tools</h2>
                 <div><!--lists container -->
                 <div class="col-md-6"><!--relevant skills -->
                   <h3>Relevant Skills</h3>
                     <ul>
                       <li>UI/UX design
-                      <li>Market research</li>
+                      <li>Animation</li>
+                      <li>CSS, HTML, & JavaScript</li>
                       <li>Data analysis</li>
                       <li>Project management</li>
-                      <li>Client relations</li>
                       <li>Writing & reporting</li>
-                      <li>CSS, HTML, & JavaScript</li>
+                      <li>Client relations</li>
                     </ul>
                 </div><!-- close skills -->
                 <div class="col-md-6"><!--tools-->
                   <h3>Tools I use</h3>
                     <ul>
-                      <li>Adobe XD</li>
+                      <li>Adobe XD, Sketch, Figma</li>
                       <li>Prott</li>
                       <li>Balsamiq</li>
-                      <li>Sketch</li>
-                      <li>Figma</li>
                       <li>PiktoChart</li>
                       <li>LucidChart</li>
-                      <li>Adobe Illustrator</li>
+                      <li>Adobe Illustrator & Photoshop</li>
                       <li>SquareSpace</li>
                     </ul>
                 </div><!-- close tools -->
@@ -123,9 +118,6 @@
             </div><!-- close s&t responsiveness when large-->
           </div><!-- skills & tools id -->
         </div><!--close substance-->
-
-        <div class="centered row">
-        </div>
 
 
   </div>
