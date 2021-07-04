@@ -67,12 +67,12 @@ h2 {
 
 h3 {
   font-size: 1.4em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h4 {
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 li {
@@ -83,7 +83,7 @@ li {
 a {
   color: #2a7a68;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* while hovering they are underlined and bolded */
@@ -105,7 +105,7 @@ a:focus {
   display: inline-block;
   background-color: #2a7a68;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2em;
   padding: 8px 16px;
   margin: 16px;
@@ -113,13 +113,6 @@ a:focus {
   transition-property: padding, border-radius, box-shadow;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
-}
-
-.button:visited {
-  background-color: #2a7a68;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
 }
 
 .button:hover {
@@ -154,7 +147,7 @@ a:focus {
   display: inline-block;
   background-color: #c8c3bf;
   color: #5a4c43;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2em;
   padding: 8px 16px;
   margin: 0 16px 16px;
@@ -162,13 +155,6 @@ a:focus {
   transition-property: padding, border-radius, box-shadow;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
-}
-
-.button.contact:visited {
-  background-color: #c8c3bf;
-  color: #5a4c43;
-  text-decoration: none;
-  font-weight: 400;
 }
 
 .button.contact:hover {
@@ -197,6 +183,10 @@ a:focus {
   color: #5a4c43;
   text-decoration: none;
   font-weight: 600;
+}
+
+.photobutton {
+  color: white !important;
 }
 
 /* layout styling */
